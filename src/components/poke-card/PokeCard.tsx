@@ -4,7 +4,7 @@ import "./styles.poke-card.css";
 
 type PokeCardProps = {
   pokemon: Pokemon;
-  setSelected?: (pokemon: Pokemon) => void;
+  setSelected: (pokemon: Pokemon) => void;
 };
 
 export const PokeCard = ({ pokemon, setSelected }: PokeCardProps) => {

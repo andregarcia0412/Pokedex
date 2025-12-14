@@ -4,7 +4,7 @@ import "./style.poke-cards-container.css";
 
 type PokeCardsContainer = {
   pokemons: Pokemon[];
-  setSelected?: (pokemon: Pokemon) => void;
+  setSelected: (pokemon: Pokemon) => void;
 };
 
 export const PokeCardsContainer = ({
