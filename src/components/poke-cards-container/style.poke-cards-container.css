@@ -1,0 +1,27 @@
+.poke-cards-container {
+  width: 75%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 76px;
+  border: 1px solid red;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .poke-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .poke-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .poke-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
