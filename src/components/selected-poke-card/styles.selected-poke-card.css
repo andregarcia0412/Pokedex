@@ -1,15 +1,68 @@
-.selected-poke-card{
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 76%;
-    height: 88%;
-    width: 20%;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    border-radius: 30px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.selected-poke-card {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  left: 76%;
+  height: 88%;
+  width: 20%;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 24px;
+}
+
+.selected-sprite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid red;
+  & img {
+    transform: scale(2);
+    image-rendering: pixelated;
+  }
+}
+
+.pokedex-entry{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  & h2{
+    font-size: 16px;
+  }
+
+  & p{
+    font-size: 14px;
+    opacity: 0.8;
+  }
+}
+
+.selected-order-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.selected-poke-types{
+  margin-bottom: 16px;
+}
+
+.orestoai{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
 }
