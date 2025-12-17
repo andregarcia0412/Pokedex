@@ -40,7 +40,7 @@ export const SelectedPokeCard = ({ pokemon }: SelectedPokemonCardProps) => {
         <img src={pokemon.sprites.other.showdown.front_default} />
       </div>
 
-      <div className="orestoai">
+      <div className="other-info">
         <div className="selected-order-name">
           <p className="order-number">N° {pokemon.id}</p>
           <h1>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</h1>

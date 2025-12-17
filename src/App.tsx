@@ -1,4 +1,3 @@
-import { PokeCard } from "./components/poke-card/PokeCard";
 import "./App.css";
 import React from "react";
 import { api } from "./services/api";
@@ -15,7 +14,7 @@ export const App = () => {
     const getPokemon = async (id: number) => {
       const auxPokemons: Pokemon[] = [];
       try {
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 100; i++) {
           const response = await api.get(`/pokemon/${i + 1}`);
           auxPokemons.push(response.data);
         }
